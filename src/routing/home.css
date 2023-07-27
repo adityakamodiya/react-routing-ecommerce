@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 2%;
+    align-items: center;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul li{
+    padding: 0 10px;
+}
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.products .product{
+    height: 300px;
+    width: 21%;
+    margin: 10px;
+}
+.products .product img{
+    height: 80%;
+    width: 100%;
+}
