@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    background-color: red;
+    padding: 0 2%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li{
+    padding: 0 10px;
+}
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#wrapper .box{
+    margin: 0 5px;
+    border: 1px solid;
+    height: 200px;
+    width: 23%;
+}

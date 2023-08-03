@@ -1,7 +1,12 @@
-import React, {useEffect, useState} from 'react'
+import React, { useContext, useEffect, useState} from 'react'
 import axios from 'axios'
+import { globel } from './Home'
+
+ 
 
 function Products() {
+  const {item,setitem} = useContext(globel)
+
   const [productData, setProductData] = useState([])
   useEffect(() => {
     axios.get("https://dummyjson.com/products")
@@ -11,7 +16,18 @@ function Products() {
     })
   }, [])
 
+
+function Myfunction(e ,product){
+e.preventDefault()
+console.log('add')
+ setitem([...item, product])
+// useglobel.setitem("hello aditya")
+
+
+
+}
   return (
+    
     <div>
       <h2>Products</h2>
       <div className='products'>
@@ -20,12 +36,13 @@ function Products() {
             return <div className='product'>
               <img src={product.thumbnail} alt=" " />
               <h4>{product.title}</h4>
-              <a href="">Add To Cart</a>
+              <a href="" onClick={(e)=>Myfunction(e,product)}>Add To Cart </a>
             </div>
           })
         }
       </div>
     </div>
+   
   )
 }
 

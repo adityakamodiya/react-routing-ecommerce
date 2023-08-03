@@ -9,6 +9,8 @@
     height: 100px;
     padding: 0 2%;
     align-items: center;
+    /* position: fixed;
+    width: 100%; */
 }
 .header ul{
     list-style: none;
@@ -37,4 +39,20 @@ a{
 .products .product img{
     height: 80%;
     width: 100%;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.results .posts{
+    /* border:  1px solid; */
+    /* padding: 0 5px; */
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
