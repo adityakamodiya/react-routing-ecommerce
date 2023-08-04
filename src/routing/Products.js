@@ -5,8 +5,9 @@ import { globel } from './Home'
  
 
 function Products() {
+  // const [btn,setbtn] = useState(false)
   const {item,setitem} = useContext(globel)
-
+  const [btn,setbtn] = useState(false)
   const [productData, setProductData] = useState([])
   useEffect(() => {
     axios.get("https://dummyjson.com/products")
@@ -19,13 +20,15 @@ function Products() {
 
 function Myfunction(e ,product){
 e.preventDefault()
-console.log('add')
+// console.log('add')
  setitem([...item, product])
 // useglobel.setitem("hello aditya")
+e.target.style.display = 'none'
+   
+ setbtn(true)
+   }
 
 
-
-}
   return (
     
     <div>
@@ -34,9 +37,12 @@ console.log('add')
         {
           productData.map((product) => {
             return <div className='product'>
-              <img src={product.thumbnail} alt=" " />
+              <img src={product.thumbnail} alt="mkokjo " />
+              <div className='detail'>
               <h4>{product.title}</h4>
-              <a href="" onClick={(e)=>Myfunction(e,product)}>Add To Cart </a>
+              
+              
+              <button href=""  className='addBtn' onClick={(e)=>Myfunction(e,product)} >Add To Cart </button>           </div>
             </div>
           })
         }

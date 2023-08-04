@@ -25,6 +25,9 @@ h2{
 }
 a{
     text-decoration: none;
+    border:  1px solid;
+    background-color:burlywood;
+    padding: 5px;
 }
 .products{
     display: flex;
@@ -32,13 +35,19 @@ a{
     flex-wrap: wrap;
 }
 .products .product{
-    height: 300px;
+    height: 350px;
     width: 21%;
     margin: 10px;
 }
 .products .product img{
-    height: 80%;
+    height: 75%;
     width: 100%;
+}
+.detail{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .results{
     display: flex;
@@ -55,4 +64,14 @@ a{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+.cartData{
+    height: 100px;
+    align-items: center;
+    /* justify-content: center; */
+    display: flex;
+}
+.cartData img{
+    height: 70px;
+    width:70px;
 }

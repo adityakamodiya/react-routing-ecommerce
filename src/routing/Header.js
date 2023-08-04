@@ -21,9 +21,9 @@ function Header() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us </Link></li>
         <li><Link to="/form">form</Link></li>
-        {/* <li><Link to="/cart"><span>cart</span></Link></li> */}
+        <li><Link to="/cart">cart<span>{item.length}</span></Link></li>
         <li><Link  to='/blog'>blog</Link></li>
-        <li><a href='' onClick={func}>cart<span>{item.length}</span></a></li>
+        {/* <li><a href='' onClick={func}>cart<span>{item.length}</span></a></li> */}
       </ul>
     </nav>
   )

@@ -29,7 +29,7 @@ function Home() {
                
           <Route path='/' element={<App />}></Route>
           
-          {/* <Route path='/cart' element={<Cart />}></Route> */}
+          <Route path='/cart' element={<Cart />}></Route>
           
           <Route path='/form' element={<Form />}></Route>
           <Route path='/about' element={<About />}></Route>
